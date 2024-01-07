@@ -1,7 +1,7 @@
 ---
-name: "[AI资讯快报]--[标题]"
+name: "[AI资讯快报]"
 about: 业界资讯、市场观点等等
-title: "[AI资讯快报]"
+title: "[AI资讯快报]-[请填入您推荐的资讯标题]"
 labels: AI资讯快报
 assignees: aitoboxinc
 

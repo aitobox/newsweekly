@@ -1,7 +1,7 @@
 ---
-name: "[AI文章推荐]--[标题]"
+name: "[AI文章推荐]"
 about: 推荐有价值的AI相关教程、论文等等
-title: "[AI文章推荐]"
+title: "[AI文章推荐]-[请填入您推荐的文章标题]"
 labels: AI文章推荐
 assignees: aitoboxinc
 

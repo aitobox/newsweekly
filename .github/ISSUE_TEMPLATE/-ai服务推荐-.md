@@ -1,7 +1,7 @@
 ---
-name: "[AI服务推荐]--[名称]"
+name: "[AI服务推荐]"
 about: 如果您要推荐一项AI相关的服务或工具，请参考此模板
-title: AI服务推荐
+title: "[AI服务推荐]-[请填入您推荐的服务名称]"
 labels: AI服务推荐
 assignees: aitoboxinc
 
