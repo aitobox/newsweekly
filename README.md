@@ -5,6 +5,10 @@
 
 欢迎投稿，推荐或自荐文章/软件/资源，请提交 issue 。
 
+## 主站点同步
+
+[AIToBox NewsWeekly](https://aitobox.com/blog/category/aitobox-newsweekly/)
+
 
 ## 2024
 
