@@ -78,5 +78,7 @@ AI Tube提供了多种类型的视频频道，包括音乐、动画、Minecraft�
 
 [发布来源-v2ex](https://v2ex.com/t/1006501)
 
+![](../images/issue-001/NeuralRadCloud.png)
+
 
 （完）
