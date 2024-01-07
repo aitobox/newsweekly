@@ -15,15 +15,43 @@
 
 ## AI资讯
 
-1、GPT Store 已经可以提交申请
+#### 2023年50个访问量最大的AI工具及AI行业分析报告
+
+Writerbuddy AI使用 SEO 行业著名的工具SEMrush，通过抓取AI工具数据，研究了3000多种 AI 工具。
+
+从中选出了访问量最大的 50 个工具，这前 50 位的AI工具就产生了超过 240 亿次的访问量。
+
+其中ChatGPT就独占了 140 亿流量，占分析流量的60%。
+
+详细发现： 🧵↓
+
+- AI行业平均每月增长2.363亿次访问量。分析的 50 个人工智能工具经历了 10.7 倍的增长率，平均每月访问量增加 2.363 亿次。
+
+- 过去12个月中，AI应用每月平均访问量达到20亿次，过去6个月，每月平均访问量激增至33亿次。
+
+- ChatGPT、Character AI和Google Bard的访问量分别净增长了18亿次、4.634亿次和6800万次。
+
+- 访问量最高AI聊天机器人：ChatGPT处于绝对领先地位，占 AI 聊天机器人类别总访问量的 76.31%。紧随其后的是Character AI，以19.86%的访问量位居第二。
+
+- Craiyon、MidJourney和Quillbot面临最大的流量下降。
+
+- 美国贡献了55亿人次访问量，占总访问量的22.62%，而欧洲国家合计贡献了39亿人次访问量。
+
+- AI 聊天机器人工具最受欢迎，访问量达到 191 亿次。
+
+- 超过63%的AI工具用户通过移动设备访问。
+
+- 存在性别差异，69.5%为男性用户，30.5%为女性用户。
+
+原文请参考[这里](https://writerbuddy.ai/blog/ai-industry-analysis)
+
+#### GPT Store 已经可以提交申请
 
 ![](../images/issue-001/gptstore.jpg)
 
-
-
 ## AI服务和工具
 
-1、[AI Tube](https://jbilcke-hf-ai-tube.hf.space/)
+#### [AI Tube](https://jbilcke-hf-ai-tube.hf.space/)
 
 AI Tube：首个AI视频平台。
 
@@ -34,7 +62,7 @@ AI Tube：首个AI视频平台。
 AI Tube提供了多种类型的视频频道，包括音乐、动画、Minecraft、Lofi、教程、游戏、公共领域和烹饪等！目前看视频数量还比较有限！
 
 
-2、[NeuralRad Cloud：史上首个免费使用的器官和肿瘤分割云服务](http://service.neuralrad.com/)
+#### [NeuralRad Cloud：史上首个免费使用的器官和肿瘤分割云服务](http://service.neuralrad.com/)
 
 介绍 service.neuralrad.com ，这是第一个免费提供全身器官风险（ OAR ）和肿瘤分割的云平台，任何人都可以使用。
 
