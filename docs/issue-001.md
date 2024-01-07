@@ -5,11 +5,19 @@
 本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
 
 
+## 2023， AI起飞的一年
+
+2023 年是 AI 发展的关键一年，ChatGPT 以及 GPT-4 的发布引发了全社会对于大模型以及生成式 AI 的关注。
+
+科技巨头微软、亚马逊、谷歌、Meta 等纷纷发力 AI；文本生成、文生图以及文生视频 AI 工具进展迅速；国内的“百模大战”；各国对于 AI 的监管逐渐加强；科学家们还在研究“涌现”的原理；还有年底的 OpenAI Drama 事件……
+
+![](../images/issue-001/ai2023.jpg)
+
 ## AI资讯
 
-1、[GPT Store 已经可以提交申请]
+1、GPT Store 已经可以提交申请
 
-![](../images/issue-001/gptstore.png)
+![](../images/issue-001/gptstore.jpg)
 
 
 
