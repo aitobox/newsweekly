@@ -11,11 +11,13 @@
 
 科技巨头微软、亚马逊、谷歌、Meta 等纷纷发力 AI；文本生成、文生图以及文生视频 AI 工具进展迅速；国内的“百模大战”；各国对于 AI 的监管逐渐加强；科学家们还在研究“涌现”的原理；还有年底的 OpenAI Drama 事件……
 
+下图总结了2023年AI领域风起云涌的事件:
+
 ![](../images/issue-001/ai2023.jpg)
 
 ## AI资讯
 
-#### 2023年50个访问量最大的AI工具及AI行业分析报告
+#### 1. 2023年50个访问量最大的AI工具及AI行业分析报告
 
 Writerbuddy AI使用 SEO 行业著名的工具SEMrush，通过抓取AI工具数据，研究了3000多种 AI 工具。
 
@@ -45,13 +47,13 @@ Writerbuddy AI使用 SEO 行业著名的工具SEMrush，通过抓取AI工具数�
 
 原文请参考[这里](https://writerbuddy.ai/blog/ai-industry-analysis)
 
-#### GPT Store 已经可以提交申请
+#### 2. GPT Store 已经可以提交申请
 
 ![](../images/issue-001/gptstore.jpg)
 
 ## AI服务和工具
 
-#### [AI Tube](https://jbilcke-hf-ai-tube.hf.space/)
+#### 1. [AI Tube](https://jbilcke-hf-ai-tube.hf.space/)
 
 AI Tube：首个AI视频平台。
 
@@ -62,7 +64,7 @@ AI Tube：首个AI视频平台。
 AI Tube提供了多种类型的视频频道，包括音乐、动画、Minecraft、Lofi、教程、游戏、公共领域和烹饪等！目前看视频数量还比较有限！
 
 
-#### [NeuralRad Cloud：史上首个免费使用的器官和肿瘤分割云服务](http://service.neuralrad.com/)
+#### 2. [NeuralRad Cloud：史上首个免费使用的器官和肿瘤分割云服务](http://service.neuralrad.com/)
 
 介绍 service.neuralrad.com ，这是第一个免费提供全身器官风险（ OAR ）和肿瘤分割的云平台，任何人都可以使用。
 
