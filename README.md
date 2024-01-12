@@ -15,3 +15,4 @@
 **一月**
 
 - 第 1 期：[AI繁荣第一年](docs/issue-001.md)
+- 第 2 期：[OpenAI宣布推出ChatGPT Store](docs/issue-002.md)
