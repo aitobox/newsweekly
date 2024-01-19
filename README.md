@@ -3,7 +3,7 @@
 
 记录每周值得分享的AI资讯、好用的工具和服务，周六发布。
 
-欢迎投稿，推荐或自荐文章/软件/资源，请提交 issue 。
+欢迎投稿，推荐或自荐文章/软件/资源，请[提交 issue](https://github.com/aitobox/newsweekly/issues/new/choose) 。
 
 ## 主站点同步
 
