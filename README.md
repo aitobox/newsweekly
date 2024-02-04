@@ -7,7 +7,7 @@
 
 ## 主站点同步
 
-[AIToBox NewsWeekly](https://aitobox.com/blog/category/aitobox-newsweekly/)
+[AIToBox NewsWeekly](https://aitobox.com/news/)
 
 
 ## 2024
