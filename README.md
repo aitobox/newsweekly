@@ -18,3 +18,7 @@
 - 第 2 期：[OpenAI宣布推出ChatGPT Store](docs/issue-002.md)
 - 第 3 期：[比尔·盖茨和萨姆·奥尔特曼对话AI领域](docs/issue-003.md)
 - 第 4 期：[用AI生成的货币发展历史视频](docs/issue-004.md)
+
+**二月**
+
+- 第 5 期：[Neuralink 完成了首个人类大脑植入](docs/issue-005.md)
