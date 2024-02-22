@@ -304,4 +304,7 @@ Sora 属于扩散型 Transformer（diffusion transformer）。
 
 https://baoyu.io/translations/openai/video-generation-models-as-world-simulators
 
+![image](https://github.com/aitobox/newsweekly/assets/137874861/5139d5cc-ff9b-487a-b3be-bd4c31213b90)
+
+
 (完)
