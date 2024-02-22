@@ -22,3 +22,4 @@
 **二月**
 
 - 第 5 期：[Neuralink 完成了首个人类大脑植入](docs/issue-005.md)
+- 第 6 期：[谷歌发布开源大模型Gemma](docs/issue-006.md)
