@@ -25,4 +25,4 @@
 - 第 6 期：[谷歌发布开源大模型Gemma](docs/issue-006.md)
 
 **三月**
-- 第 7 期：[如何寻找找真实的AI需求](docs/issue-007.md)
+- 第 7 期：[如何寻找真实的AI需求](docs/issue-007.md)
