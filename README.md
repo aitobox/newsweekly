@@ -26,3 +26,4 @@
 
 **三月**
 - 第 7 期：[如何寻找真实的AI需求](docs/issue-007.md)
+- 第 8 期：[Suno AI--"音乐界的ChatGPT"](docs/issue-008.md)
