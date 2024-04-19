@@ -27,3 +27,6 @@
 **三月**
 - 第 7 期：[如何寻找真实的AI需求](docs/issue-007.md)
 - 第 8 期：[Suno AI--"音乐界的ChatGPT"](docs/issue-008.md)
+
+**四月**
+- 第 9 期：[Meta 发布开源模型 Llama 3](docs/issue-009.md)
