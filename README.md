@@ -30,3 +30,6 @@
 
 **四月**
 - 第 9 期：[Meta 发布开源模型 Llama 3](docs/issue-009.md)
+
+**五月**
+- 第 10 期：[Open AI 发布ChatGPT-4o](docs/issue-010.md)
