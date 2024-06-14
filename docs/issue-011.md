@@ -66,7 +66,6 @@ GitHub 模式使你能够直接连接到 GitHub 仓库并与它们聊天。
 
 https://devv.ai/
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/c75ff30c-64f0-43fa-b803-1a8c8e6bbf8d)
 
 ![image](https://github.com/aitobox/newsweekly/assets/137874861/2169e41d-7c65-4f9f-8b91-63c95be9430e)
 
