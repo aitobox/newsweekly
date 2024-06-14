@@ -33,3 +33,6 @@
 
 **五月**
 - 第 10 期：[Open AI 发布ChatGPT-4o](docs/issue-010.md)
+
+**六月**
+- 第 11 期：[Andrej Karpathy 教你从零复现GPT-2，通宵运行即搞定](docs/issue-011.md)
