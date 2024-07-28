@@ -36,4 +36,6 @@
 
 **六月**
 - 第 11 期：[Andrej Karpathy 教你从零复现GPT-2，通宵运行即搞定](docs/issue-011.md)
-- 第 12 期: [Meta 发布新一代开源大模型 Llama 3.1](docs/issue-012.md)
+
+**七月**  
+- 第 12 期：[Meta 发布新一代开源大模型 Llama 3.1](docs/issue-012.md)
