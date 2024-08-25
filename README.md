@@ -39,3 +39,6 @@
 
 **七月**  
 - 第 12 期：[Meta 发布新一代开源大模型 Llama 3.1](docs/issue-012.md)
+
+- **八月**  
+- 第 13 期：[LLM Visualization-将 ChatGPT 原理的详细细节可视化的网站](docs/issue-013.md)
