@@ -42,3 +42,6 @@
 
 **八月**  
 - 第 13 期：[LLM Visualization-将 ChatGPT 原理的详细细节可视化的网站](docs/issue-013.md)
+
+**九月**  
+- 第 14 期：[OpenAI 发布全新的 o1 系列模型](docs/issue-014.md)
