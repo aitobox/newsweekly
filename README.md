@@ -45,3 +45,6 @@
 
 **九月**  
 - 第 14 期：[OpenAI 发布全新的 o1 系列模型](docs/issue-014.md)
+
+**十月**  
+- 第 15 期：[Anthropic 推出了升级版的 Claude 3.5 Sonnet 以及一款新模型 Claude 3.5 Haiku](docs/issue-015.md)
