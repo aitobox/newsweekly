@@ -48,3 +48,7 @@
 
 **十月**  
 - 第 15 期：[Anthropic 推出了升级版的 Claude 3.5 Sonnet 以及一款新模型 Claude 3.5 Haiku](docs/issue-015.md)
+
+**十一月**  
+- 第 16 期：[OpenAI上线AI搜索引擎产品——ChatGPT search](docs/issue-016.md)
+
