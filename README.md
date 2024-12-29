@@ -52,3 +52,5 @@
 **十一月**  
 - 第 16 期：[OpenAI上线AI搜索引擎产品——ChatGPT search](docs/issue-016.md)
 
+**十二月**  
+- 第 17 期：[谷歌推出Gemini 2.0](docs/issue-017.md)
