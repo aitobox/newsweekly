@@ -9,6 +9,12 @@
 
 [AIToBox NewsWeekly](https://aitobox.com/news/)
 
+## 2025
+
+**一月**
+
+- 第 18 期：[DeepSeek发布并开源 R1 模型](docs/issue-018.md)
+
 
 ## 2024
 
