@@ -15,6 +15,9 @@
 
 - 第 18 期：[DeepSeek发布并开源 R1 模型](docs/issue-018.md)
 
+**三月**
+
+- 第 19 期：[DeepSeek发布DeepSeek-V3-0324，编程能力大幅提升](docs/issue-019.md)
 
 ## 2024
 
