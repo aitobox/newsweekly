@@ -19,6 +19,10 @@
 
 - 第 19 期：[DeepSeek发布DeepSeek-V3-0324，编程能力大幅提升](docs/issue-019.md)
 
+**四月**
+
+- 第 20 期：[Llama 4、Gemini 2.5、通义千问Qwen3先后发布，大模型竞争激烈](docs/issue-020.md)
+
 ## 2024
 
 **一月**
