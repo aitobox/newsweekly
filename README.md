@@ -9,6 +9,13 @@
 
 [AIToBox NewsWeekly](https://aitobox.com/news/)
 
+
+## 2026
+
+**五月**
+
+- 第 22 期：[Gemini 3.5 Flash发布](docs/issue-022.md)
+
 ## 2025
 
 **一月**
