@@ -132,6 +132,7 @@ def generate_rss_feed(issues_list, output_path):
         rss_items.append(item_xml)
         
     now_rfc = email.utils.format_datetime(datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))))
+    rss_items_xml = "\n".join(rss_items)
     
     rss_template = f"""<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -142,7 +143,7 @@ def generate_rss_feed(issues_list, output_path):
     <language>zh-cn</language>
     <lastBuildDate>{now_rfc}</lastBuildDate>
     <atom:link href="https://newsweekly.aitobox.com/rss.xml" rel="self" type="application/rss+xml" />
-{"\n".join(rss_items)}
+{rss_items_xml}
   </channel>
 </rss>"""
 
