@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AIToBox WeeklyNews</title>
+    <link>https://newsweekly.aitobox.com/</link>
+    <description>记录每周值得分享的AI资讯、好用的工具和服务，周六发布。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 27 Jun 2026 19:42:05 +0800</lastBuildDate>
+    <atom:link href="https://newsweekly.aitobox.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[ 20260627期：AI在工作中学习将是下一个重大突破[The next big breakthrough will be AIs learning on the job] ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260627/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260627/</guid>
+      <pubDate>Sat, 27 Jun 2026 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+**深度解读**]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20260621期：Exclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260621/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260621/</guid>
+      <pubDate>Sun, 21 Jun 2026 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+**深度解读**]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20260614期：Dangerous Technology For Americans Only ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260614/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260614/</guid>
+      <pubDate>Sun, 14 Jun 2026 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+**资讯地址**]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20260607期：Pluralistic: Criticizing the everything machine (06 Jun 2026) ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260607/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260607/</guid>
+      <pubDate>Sun, 07 Jun 2026 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+本文通过剖析 AI 行业过度炒作的“吉什推论”（Gish Gallop）现象，指出当前 AI 产业在经济模型上的不可持续性，呼吁公众理性审视其商业逻辑而非盲目跟风。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20260602期：One &udm After Another ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260602/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260602/</guid>
+      <pubDate>Tue, 02 Jun 2026 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+Google 强推 AI 搜索概览引发用户不满，促使“&udm=14”这一简单跳转工具持续走红，反映出用户对纯粹搜索体验的强烈渴求。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20260522期：Gemini 3.5 Flash发布 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260522/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260522/</guid>
+      <pubDate>Fri, 22 May 2026 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+Anthropic 宣称即将实现首次盈利的报道疑点重重，其所谓的运营利润更可能源于与 SpaceX 的折扣协议和会计调整，而非业务模式的实质性改善。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20250523期：Google I/O开发者大会 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250523/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250523/</guid>
+      <pubDate>Fri, 23 May 2025 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+万众期待的Google I/O开发者大会，终于在5月21日凌晨1点正式开始了。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20250430期：Llama 4、Gemini 2.5、通义千问Qwen3先后发布，大模型竞争激烈 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250430/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250430/</guid>
+      <pubDate>Wed, 30 Apr 2025 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+4月6日，Meta推出首批 Llama 4 模型：Llama 4 Scout 与 Llama 4 Maverick]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20250325期：DeepSeek发布DeepSeek-V3-0324，编程能力大幅提升 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250325/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250325/</guid>
+      <pubDate>Tue, 25 Mar 2025 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+3月24日晚，DeepSeek发布了模型更新——DeepSeek-V3-0324，本次为DeepSeek V3模型的小版本更新，其参数量为 671 亿。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20250125期：DeepSeek发布并开源 R1 模型 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250125/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20250125/</guid>
+      <pubDate>Sat, 25 Jan 2025 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+在正在举办的CES 2025上，英伟达创始人兼CEO黄仁勋宣布，将推出了全新的个人计算产品Project DIGITS。据介绍，Project DIGITS搭载了英伟达GB10超级芯片，提供千万亿次的AI计算性能，可支持AI大模型的原型设计、微调和运行。Project DIGITS的愿景：超算中心搬回家]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20241229期：谷歌推出Gemini 2.0 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20241229/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20241229/</guid>
+      <pubDate>Sun, 29 Dec 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+为应对OpenAI此前推出的众多新产品，谷歌12月12日推出下一代重要人工智能模型Gemini 2.0 Flash，可以原生生成图像和音频，同时支持文本生成。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20241129期：OpenAI上线AI搜索引擎产品——ChatGPT search ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20241129/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20241129/</guid>
+      <pubDate>Fri, 29 Nov 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+2024-11-04,OpenAI终于发布了搜索产品ChatGPT search。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20241027期：Anthropic 推出了升级版的 Claude 3.5 Sonnet 以及一款新模型 Claude 3.5 Haiku ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20241027/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20241027/</guid>
+      <pubDate>Sun, 27 Oct 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+Claude 3.5 Sonnet 版本号虽未提升，但却迎来了史诗级大更新：能像人一样使用计算机了！]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240914期：OpenAI 发布全新的 o1 系列模型 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240914/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240914/</guid>
+      <pubDate>Sat, 14 Sep 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+北京时间 9 月 13 日午夜，OpenAI 宣布推出其全新产品 OpenAI o1，也就是此前广受期待的代号为 “草莓（Strawberry）” 生成式 AI 模型。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240825期：LLM Visualization-将 ChatGPT 原理的详细细节可视化的网站 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240825/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240825/</guid>
+      <pubDate>Sun, 25 Aug 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+这是一款基于 web 的开源交互式可视化工具「Transformer Explainer」，帮助非专业人士了解 Transformer 的高级模型结构和低级数学运算]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240728期：Meta 发布新一代开源大模型 Llama 3.1 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240728/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240728/</guid>
+      <pubDate>Sun, 28 Jul 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+2024-07-24，Meta 正式发布新一代开源大模型 Llama 3.1 系列，提供 8B、70B 及 405B 参数版本。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240614期：Andrej Karpathy 教你从零复现GPT-2，通宵运行即搞定 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240614/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240614/</guid>
+      <pubDate>Fri, 14 Jun 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+AI 大牛 Andrej Karpathy 又「上新」了，这次一口气放出了长达四个小时的视频。视频主题为「让我们来复现 GPT-2（1.24 亿参数）」。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240519期：Open AI 发布ChatGPT-4o ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240519/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240519/</guid>
+      <pubDate>Sun, 19 May 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+美国时间 5 月 13 日，Open AI 抢在Google I/O大会之前召开了发布会，发布了一个名为ChatGPT-4o（o=omni，即“全方位”的意思）的全新版本。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240419期：Meta 发布开源模型 Llama 3 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240419/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240419/</guid>
+      <pubDate>Fri, 19 Apr 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+Meta 发布开源模型 Llama 3，以及新版本Meta AI 助手]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240328期：Suno AI--"音乐界的ChatGPT" ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240328/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240328/</guid>
+      <pubDate>Thu, 28 Mar 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+Lex Fridman采访了Sam Altman，这次采访有快两个小时，基本上谈到了所有需要谈的内容。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240309期：如何寻找真实的AI需求 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240309/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240309/</guid>
+      <pubDate>Sat, 09 Mar 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+找对需求，开发就成功了一半，那么如何去确定真实世界中用户们最渴望的AI工具是什么呢？]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240222期：谷歌发布开源大模型Gemma ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240222/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240222/</guid>
+      <pubDate>Thu, 22 Feb 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+GPT现在可以在与用户的交互中跨聊天记住你们互动的所有信息，并在后续对话中利用这些信息来提供更相关和个性化的回答。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240204期：Neuralink 完成了首个人类大脑植入 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240204/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240204/</guid>
+      <pubDate>Sun, 04 Feb 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+* 一句话简介]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240126期：用AI生成的货币发展历史视频 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240126/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240126/</guid>
+      <pubDate>Fri, 26 Jan 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+详细内容]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240119期：比尔·盖茨和萨姆·奥尔特曼对话AI领域 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240119/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240119/</guid>
+      <pubDate>Fri, 19 Jan 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+比尔盖茨在他的访谈节目中邀请萨姆·奥尔特曼聊聊AI]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240112期：OpenAI宣布推出ChatGPT Store ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240112/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240112/</guid>
+      <pubDate>Fri, 12 Jan 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+这是一种针对各种规模团队的新ChatGPT计划，提供一个安全、协作的工作空间，以最大化在工作中利用ChatGPT的效果。]]></description>
+    </item>
+    <item>
+      <title><![CDATA[ 20240107期：AI繁荣第一年 ]]></title>
+      <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240107/</link>
+      <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20240107/</guid>
+      <pubDate>Sun, 07 Jan 2024 10:00:00 +0800</pubDate>
+      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+
+本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+
+2023 年是 AI 发展的关键一年，ChatGPT 以及 GPT-4 的发布引发了全社会对于大模型以及生成式 AI 的关注。]]></description>
+    </item>
+  </channel>
+</rss>
