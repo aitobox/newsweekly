@@ -19,7 +19,7 @@
 
 https://theresanaiforthat.com/requests/
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/2f99d32f-626c-4908-ae47-31b83f1241c4)
+![image](images/20240309/2f99d32f-626c-4908-ae47-31b83f1241c4.png)
 
 
 
@@ -55,7 +55,7 @@ https://mistral.ai/news/mistral-large/
 
 https://auth.mistral.ai/
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/aee2b2e8-7c9c-4d27-ad19-1025f9911a3b)
+![image](images/20240309/aee2b2e8-7c9c-4d27-ad19-1025f9911a3b.png)
 
 
 #### 2. immersive translate--沉浸式观看各种外语网页和视频 
@@ -72,7 +72,7 @@ https://auth.mistral.ai/
 
 https://www.producthunt.com/products/video-bilingual-subtitle-translation
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/c0332c07-8b51-4683-8761-6644f54d4aeb)
+![image](images/20240309/c0332c07-8b51-4683-8761-6644f54d4aeb.png)
 
 #### 3. SUPIR-一个提升图片分辨率的工具
 
@@ -114,7 +114,7 @@ https://t.co/0pmpsPQsnF
 
 https://github.com/Fanghua-Yu/SUPIR
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/f56ea9cf-720f-48f3-884a-cbf56c9e6082)
+![image](images/20240309/f56ea9cf-720f-48f3-884a-cbf56c9e6082.png)
 
 
 (完)

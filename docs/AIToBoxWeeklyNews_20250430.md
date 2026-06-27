@@ -33,7 +33,7 @@ Llama 4 Maverick
 
 https://ai.meta.com/blog/llama-4-multimodal-intelligence/
 
-![image](https://github.com/user-attachments/assets/e6d419fc-c028-4fbf-8f72-43306461b24d)
+![image](images/20250430/e6d419fc-c028-4fbf-8f72-43306461b24d.png)
 
 
 
@@ -59,7 +59,7 @@ Gemini 2.5 Pro即日起通过Google AI Studio和Gemini应用向订阅“Gemini A
 
 https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/
 
-![image](https://github.com/user-attachments/assets/715441bc-f47e-41a7-9e82-b987c8d84672)
+![image](images/20250430/715441bc-f47e-41a7-9e82-b987c8d84672.png)
 
 
 
@@ -104,7 +104,7 @@ Qwen3支持119种语言和方言，包括中文（普通话、粤语）、英语
 
 https://qwenlm.github.io/blog/qwen3/
 
-![image](https://github.com/user-attachments/assets/d79a9c14-8a65-461c-a833-e4567d5a9d94)
+![image](images/20250430/d79a9c14-8a65-461c-a833-e4567d5a9d94.png)
 
 
 
@@ -123,7 +123,7 @@ https://qwenlm.github.io/blog/qwen3/
 https://www.shangaoai.com/
 
 
-![image](https://github.com/user-attachments/assets/755cf470-5320-4208-8ca3-03942fb17ef0)
+![image](images/20250430/755cf470-5320-4208-8ca3-03942fb17ef0.png)
 
 
 

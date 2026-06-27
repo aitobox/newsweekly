@@ -26,7 +26,7 @@ DeepSeek-V3-0324在榜单上排第7位，价格远远低于所有其他上榜大
 
 https://huggingface.co/deepseek-ai/DeepSeek-V3-0324
 
-![Image](https://github.com/user-attachments/assets/9ab4ebfb-5f3d-4be5-84d6-f27afe2ea746)
+![Image](images/20250325/9ab4ebfb-5f3d-4be5-84d6-f27afe2ea746.png)
 
 
 #### 2. 阿里巴巴团队推出一个开源的3D AI 动作控制模型 LHM
@@ -78,43 +78,43 @@ https://aistudio.google.com/
 
 1. 修改人物动作
 
-![Image](https://github.com/user-attachments/assets/6cf1b556-af23-47ba-890f-4cdeaeb0cecc)
+![Image](images/20250325/6cf1b556-af23-47ba-890f-4cdeaeb0cecc.png)
 
 2. 为证件照添加背景
 
-![Image](https://github.com/user-attachments/assets/71c657ed-9588-4de1-aab1-1b62fda24ee7)
+![Image](images/20250325/71c657ed-9588-4de1-aab1-1b62fda24ee7.png)
 
 3. 添加logo元素
 
-![Image](https://github.com/user-attachments/assets/88682441-a241-4596-a126-52fd86ad6003)
+![Image](images/20250325/88682441-a241-4596-a126-52fd86ad6003.png)
 
 4. 植入式广告
 
-![Image](https://github.com/user-attachments/assets/92c87fb9-5af6-453f-b4a3-d6e31aa8188a)
+![Image](images/20250325/92c87fb9-5af6-453f-b4a3-d6e31aa8188a.png)
 
 5. 黑白图片彩色化
 
-![Image](https://github.com/user-attachments/assets/26c2927e-3e10-472f-b754-62bbfab5b40b)
+![Image](images/20250325/26c2927e-3e10-472f-b754-62bbfab5b40b.png)
 
 6. 设计家居装饰
 
-![Image](https://github.com/user-attachments/assets/e3f7b9a2-caae-4923-8096-3abba5c32ac3)
+![Image](images/20250325/e3f7b9a2-caae-4923-8096-3abba5c32ac3.png)
 
 7. 人像照变换角度
 
-![Image](https://github.com/user-attachments/assets/a68aed9a-9bfb-405b-87da-92a3e3ec4ea6)
+![Image](images/20250325/a68aed9a-9bfb-405b-87da-92a3e3ec4ea6.png)
 
 8. 去除水印
 
-![Image](https://github.com/user-attachments/assets/a4e14545-7780-484e-a050-39f3a4930a80)
+![Image](images/20250325/a4e14545-7780-484e-a050-39f3a4930a80.png)
 
 9. 为故事生成插图
 
-![Image](https://github.com/user-attachments/assets/23e8f9fe-5994-495f-9db5-37b2b56907cd)
+![Image](images/20250325/23e8f9fe-5994-495f-9db5-37b2b56907cd.png)
 
 10. 虚拟换衣
 
-![Image](https://github.com/user-attachments/assets/a4ffd701-fb7c-4bb2-9ff2-a4246f8abbaf)
+![Image](images/20250325/a4ffd701-fb7c-4bb2-9ff2-a4246f8abbaf.png)
 
 
 ## AI文章
@@ -131,7 +131,7 @@ https://aistudio.google.com/
 
 https://mp.weixin.qq.com/s/vIrvbVJ6Nv00Ehre1zZwMw?v_p=90
 
-![Image](https://github.com/user-attachments/assets/ec39386c-cb8e-4796-90d6-c17137df5312)
+![Image](images/20250325/ec39386c-cb8e-4796-90d6-c17137df5312.png)
 
 
 

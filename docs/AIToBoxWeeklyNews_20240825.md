@@ -21,7 +21,7 @@ Transformer Explainer 通过文本生成来解释 Transformer 内部工作原理
 
 https://poloclub.github.io/transformer-explainer/
 
-![image](https://github.com/user-attachments/assets/bd0c788d-b86c-4170-aa28-090ba1c7b000)
+![image](images/20240825/bd0c788d-b86c-4170-aa28-090ba1c7b000.png)
 
 
 #### 2. LLM Visualization-将 ChatGPT 原理的详细细节可视化的网站
@@ -40,7 +40,7 @@ https://bbycroft.net/llm
 中文网站:
 https://github.com/czhixin/llm-viz-cn
 
-![cfb376ce-ea8e-4aae-9cf7-b66d90bcecd8](https://github.com/user-attachments/assets/5ed114bf-ffab-44fd-a4ea-b118c2a2d5ff)
+![cfb376ce-ea8e-4aae-9cf7-b66d90bcecd8](images/20240825/5ed114bf-ffab-44fd-a4ea-b118c2a2d5ff.gif)
 
 https://github.com/user-attachments/assets/561c3d82-c2f5-44c3-86df-f64ae0f02b0b
 

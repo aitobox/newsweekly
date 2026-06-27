@@ -20,7 +20,7 @@ https://twitter.com/elonmusk/status/1752098683024220632
 
 * 配图或视频
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/65dd2384-8af2-4381-920c-f966f1ca1010)
+![image](images/20240204/65dd2384-8af2-4381-920c-f966f1ca1010.png)
 
 
 #### 2. 百川智能发布超千亿大模型Baichuan 3，中文评测超越GPT-4
@@ -49,7 +49,7 @@ https://mp.weixin.qq.com/s/YkubqYqVwkYGRmFEzQTGqQ?from=groupmessage&isappinstall
 
 * 配图或视频
   
-![image](https://github.com/aitobox/newsweekly/assets/137874861/7b4d0998-18de-4565-8ef5-e4fb8ea64193)
+![image](images/20240204/7b4d0998-18de-4565-8ef5-e4fb8ea64193.png)
 
 
 #### 3. inimax的AI对话机器人问答产品海螺问问上线了
@@ -82,7 +82,7 @@ https://twitter.com/op7418/status/1751931754351677722
 https://hailuoai.com/
 
 * 配图或视频
-![image](https://github.com/aitobox/newsweekly/assets/137874861/9959f0a5-1b30-44d6-a40d-e1a03165a76c)
+![image](images/20240204/9959f0a5-1b30-44d6-a40d-e1a03165a76c.png)
 
 
 ## AI服务和工具
@@ -100,7 +100,7 @@ https://hailuoai.com/
 
 [体验地址](https://www.toolify.ai/zh/Best-trending-AI-Tools)
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/cb8a226e-5243-478e-afd7-bd5c3f8b0101)
+![image](images/20240204/cb8a226e-5243-478e-afd7-bd5c3f8b0101.png)
 
 
 #### 2. [AIBUS-AI辅助学习工具](https://studio.albus.org/)
@@ -131,6 +131,6 @@ https://hailuoai.com/
 
 增加一个Youtube卡片。输入“皮肤结构”，自动返回谷歌视频结果。
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/11096afb-9bf1-4356-9c3e-2a60275fa2f8)
+![image](images/20240204/11096afb-9bf1-4356-9c3e-2a60275fa2f8.png)
 
 （完）
