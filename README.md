@@ -1,5 +1,5 @@
 # AIToBox周刊
-每周AI资讯、工具推荐
+每周AI资讯、工具推荐 | [RSS 订阅](https://newsweekly.aitobox.com/rss.xml)
 
 记录每周值得分享的AI资讯、好用的工具和服务，周六发布。
 
@@ -8,8 +8,6 @@
 ## 主站点同步
 
 [AIToBox NewsWeekly](https://newsweekly.aitobox.com)
-
-[订阅 RSS](https://newsweekly.aitobox.com/rss.xml)
 
 ## 2026
 

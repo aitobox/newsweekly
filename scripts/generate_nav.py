@@ -83,7 +83,6 @@ def extract_description(filepath):
             line_str = line.strip()
             if not line_str or line_str.startswith("#") or line_str.startswith(">"):
                 continue
-            # Limit length of paragraph markdown syntax to keep description clean
             paragraphs.append(line_str)
             if len(paragraphs) >= 3:
                 break
@@ -157,7 +156,7 @@ def main():
     
     # Grouping structure: { year: { month: [ (filename, display_title, full_date) ] } }
     data = {}
-    all_issues = [] # flat list for RSS
+    all_issues = []
     
     for filename in os.listdir(docs_dir):
         m = pattern.match(filename)
@@ -185,6 +184,10 @@ def main():
 
     # Sort logic: newest first
     nav = []
+    
+    # Prepend RSS Subscription link as a top-level tab in navigation bar
+    nav.append({"RSS 订阅": "https://newsweekly.aitobox.com/rss.xml"})
+    
     markdown_list_lines = []
     
     # Sort years descending
@@ -238,17 +241,18 @@ def main():
     readme_path = "README.md"
     if os.path.exists(readme_path):
         with open(readme_path, "r", encoding="utf-8") as f:
-            readme_content = f.read()
+            lines = f.readlines()
+        
+        # Update lines 2 and 3 of README to put RSS link in the subtitle header
+        if len(lines) >= 3:
+            lines[1] = "每周AI资讯、工具推荐 | [RSS 订阅](https://newsweekly.aitobox.com/rss.xml)\n"
+            
+        readme_content = "".join(lines)
         
         split_marker = "[AIToBox NewsWeekly](https://newsweekly.aitobox.com)"
         parts = readme_content.split(split_marker)
         if len(parts) >= 2:
             header_part = parts[0] + split_marker + "\n\n"
-            
-            # Let's add RSS Link under header
-            rss_link_line = "[订阅 RSS](https://newsweekly.aitobox.com/rss.xml) ｜ "
-            header_part = header_part.replace("[AIToBox NewsWeekly](https://newsweekly.aitobox.com)", f"[AIToBox NewsWeekly](https://newsweekly.aitobox.com)\n\n{rss_link_line[:-3]}")
-            
             new_readme_content = header_part + "\n".join(markdown_list_lines).strip() + "\n"
             with open(readme_path, "w", encoding="utf-8") as f:
                 f.write(new_readme_content)
