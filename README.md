@@ -3,11 +3,11 @@
 
 记录每周值得分享的AI资讯、好用的工具和服务，周六发布。
 
-欢迎投稿，推荐或自荐文章/软件/资源，请[提交 issue](https://github.com/aitobox/newsweekly/issues/new/choose) 。
+欢迎投稿，推荐或自荐文章/软件/资源，请[提交 issue](https://github.com/aitobox/ATBNewsWeekly/issues/new/choose) 。
 
 ## 主站点同步
 
-[AIToBox NewsWeekly](https://aitobox.com/news/)
+[AIToBox NewsWeekly](https://newsweekly.aitobox.com)
 
 
 ## 2026
@@ -62,20 +62,20 @@
 **六月**
 - 第 11 期：[Andrej Karpathy 教你从零复现GPT-2，通宵运行即搞定](docs/AIToBoxWeeklyNews_20240614.md)
 
-**七月**  
+**七月**
 - 第 12 期：[Meta 发布新一代开源大模型 Llama 3.1](docs/AIToBoxWeeklyNews_20240728.md)
 
-**八月**  
+**八月**
 - 第 13 期：[LLM Visualization-将 ChatGPT 原理的详细细节可视化的网站](docs/AIToBoxWeeklyNews_20240825.md)
 
-**九月**  
+**九月**
 - 第 14 期：[OpenAI 发布全新的 o1 系列模型](docs/AIToBoxWeeklyNews_20240914.md)
 
-**十月**  
+**十月**
 - 第 15 期：[Anthropic 推出了升级版的 Claude 3.5 Sonnet 以及一款新模型 Claude 3.5 Haiku](docs/AIToBoxWeeklyNews_20241027.md)
 
-**十一月**  
+**十一月**
 - 第 16 期：[OpenAI上线AI搜索引擎产品——ChatGPT search](docs/AIToBoxWeeklyNews_20241129.md)
 
-**十二月**  
+**十二月**
 - 第 17 期：[谷歌推出Gemini 2.0](docs/AIToBoxWeeklyNews_20241229.md)
