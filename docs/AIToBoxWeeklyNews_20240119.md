@@ -19,7 +19,7 @@
 视频在[这里](https://www.youtube.com/watch?v=PkXELH6Y2lM)
 
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/5406efab-c2cd-4bc9-bd07-0a747fc1c82c)
+![image](images/20240119/5406efab-c2cd-4bc9-bd07-0a747fc1c82c.png)
 
 ## AI文章推荐
 
@@ -70,7 +70,7 @@
 
 快去体验吧！
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/353948cc-7ed7-479f-893a-bbb76df6e090)
+![image](images/20240119/353948cc-7ed7-479f-893a-bbb76df6e090.png)
 
 
 #### 2. [GPTS Works](https://gpts.works/)
@@ -79,7 +79,7 @@
 
 它是开源应用，有助于发掘最有用、最有趣的GPTS应用；
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/e1b49e52-b78c-4e07-aeee-16f7f07aa353)
+![image](images/20240119/e1b49e52-b78c-4e07-aeee-16f7f07aa353.png)
 
 #### 3. [能帮你自动生成 Prompts 的 GPTs](https://chat.openai.com/g/g-RTB5MZWrJ-promptgong-cheng-shi)
 
@@ -96,7 +96,7 @@ ChatGPT Store 上线，导致 GPTs 大爆发；
 这个工具可以简化流程；只要告诉我：我需要一个 xxx 的角色，他就会生成专业的 Prompts ，然后把这个 Prompts 转换为 GPTS ，就可以直接使用啦:
 
 
-![image](https://github.com/aitobox/newsweekly/assets/137874861/8fa68a8a-14e1-4a0e-91cf-b3cf668dcbed)
+![image](images/20240119/8fa68a8a-14e1-4a0e-91cf-b3cf668dcbed.png)
 
 #### 4. [Resemble Enhance-开源语音超分辨率AI模型](https://github.com/resemble-ai/resemble-enhance)
 

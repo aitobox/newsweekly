@@ -36,7 +36,7 @@ https://www.anthropic.com/news/claude-3-5-sonnet
 
 https://www.llm-book.com/
 
-![image](https://github.com/user-attachments/assets/67c41135-a9f0-44d4-99fb-5d28a3b8437d)
+![image](images/20241027/67c41135-a9f0-44d4-99fb-5d28a3b8437d.png)
 
 
 ## AI服务
@@ -56,7 +56,7 @@ https://www.llm-book.com/
 
 https://team.doubao.com/en/special/seed-music
 
-![image](https://github.com/user-attachments/assets/a99a01ba-2eed-4e24-a7b2-78cbd79e7d68)
+![image](images/20241027/a99a01ba-2eed-4e24-a7b2-78cbd79e7d68.png)
 
 #### 2. Comfy 发布了跨平台的打包桌面应用程序
 
@@ -86,7 +86,7 @@ ComfyUI 发布 桌面一键键安装包
 
 https://www.comfy.org/waitlist
 
-![image](https://github.com/user-attachments/assets/8e910271-3395-4c48-953d-1ca031d8da32)
+![image](images/20241027/8e910271-3395-4c48-953d-1ca031d8da32.png)
 
 
 ## 往期推荐

@@ -23,9 +23,9 @@ OpenAI 表示，对于复杂推理任务而言，新模型代表着 AI 能力的
 
 https://openai.com/o1/
 
-![image](https://github.com/user-attachments/assets/c298669e-a03a-404b-b16c-608e5a9bed50)
+![image](images/20240914/c298669e-a03a-404b-b16c-608e5a9bed50.png)
 
-![image](https://github.com/user-attachments/assets/e09ab19c-e8df-472c-95d8-c74b4c4c4eaf)
+![image](images/20240914/e09ab19c-e8df-472c-95d8-c74b4c4c4eaf.png)
 
 
 ## AI文章
@@ -48,8 +48,8 @@ https://openai.com/o1/
 
 https://github.com/jingyaogong/minimind
 
-![image](https://github.com/user-attachments/assets/48e62795-cb2d-4eff-b8b2-52427699b032)
-![image](https://github.com/user-attachments/assets/f5ddac06-1a51-470c-a590-bca80b09ffc7)
+![image](images/20240914/48e62795-cb2d-4eff-b8b2-52427699b032.png)
+![image](images/20240914/f5ddac06-1a51-470c-a590-bca80b09ffc7.png)
 
 ## AI服务
 
@@ -102,9 +102,9 @@ https://github.com/jingyaogong/minimind
 
 https://monica.im/home
 
-![image](https://github.com/user-attachments/assets/0cb7d2f1-7ee0-4195-871d-7d5d8040ee9d)
+![image](images/20240914/0cb7d2f1-7ee0-4195-871d-7d5d8040ee9d.png)
 
-![image](https://github.com/user-attachments/assets/1baa52d9-0cac-49c7-87d4-647d6840b800)
+![image](images/20240914/1baa52d9-0cac-49c7-87d4-647d6840b800.png)
 
 
 ## 往期推荐
