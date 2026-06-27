@@ -1,5 +1,7 @@
 import os
 import re
+import datetime
+import email.utils
 
 # Map month numbers to Chinese
 MONTH_MAP = {
@@ -71,6 +73,33 @@ def extract_headline(filepath, date_key):
     
     return "Weekly News"
 
+def extract_description(filepath):
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        
+        paragraphs = []
+        for line in lines:
+            line_str = line.strip()
+            if not line_str or line_str.startswith("#") or line_str.startswith(">"):
+                continue
+            # Limit length of paragraph markdown syntax to keep description clean
+            paragraphs.append(line_str)
+            if len(paragraphs) >= 3:
+                break
+        return "\n\n".join(paragraphs)
+    except Exception:
+        return "AIToBox WeeklyNews"
+
+def get_rfc822_date(date_str):
+    try:
+        dt = datetime.datetime.strptime(date_str, "%Y%m%d")
+        # Assume publish time is 10:00:00 UTC+8
+        dt = dt.replace(hour=10, minute=0, second=0, tzinfo=datetime.timezone(datetime.timedelta(hours=8)))
+        return email.utils.format_datetime(dt)
+    except Exception:
+        return email.utils.format_datetime(datetime.datetime.now())
+
 def to_toml_val(val):
     if isinstance(val, str):
         escaped = val.replace('\\', '\\\\').replace('"', '\\"')
@@ -85,12 +114,49 @@ def to_toml_val(val):
         return "{ " + ", ".join(parts) + " }"
     return str(val)
 
+def generate_rss_feed(issues_list, output_path):
+    rss_items = []
+    
+    for filename, headline, full_date, filepath in issues_list:
+        pub_date = get_rfc822_date(full_date)
+        desc = extract_description(filepath)
+        page_url = f"https://newsweekly.aitobox.com/{filename[:-3]}/"
+        
+        item_xml = f"""    <item>
+      <title><![CDATA[ {full_date}期：{headline} ]]></title>
+      <link>{page_url}</link>
+      <guid>{page_url}</guid>
+      <pubDate>{pub_date}</pubDate>
+      <description><![CDATA[{desc}]]></description>
+    </item>"""
+        rss_items.append(item_xml)
+        
+    now_rfc = email.utils.format_datetime(datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))))
+    
+    rss_template = f"""<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AIToBox WeeklyNews</title>
+    <link>https://newsweekly.aitobox.com/</link>
+    <description>记录每周值得分享的AI资讯、好用的工具和服务，周六发布。</description>
+    <language>zh-cn</language>
+    <lastBuildDate>{now_rfc}</lastBuildDate>
+    <atom:link href="https://newsweekly.aitobox.com/rss.xml" rel="self" type="application/rss+xml" />
+{"\n".join(rss_items)}
+  </channel>
+</rss>"""
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(rss_template)
+    print(f"RSS feed generated successfully at {output_path}")
+
 def main():
     docs_dir = "docs"
     pattern = re.compile(r"^AIToBoxWeeklyNews_(\d{4})(\d{2})(\d{2})\.md$")
     
     # Grouping structure: { year: { month: [ (filename, display_title, full_date) ] } }
     data = {}
+    all_issues = [] # flat list for RSS
     
     for filename in os.listdir(docs_dir):
         m = pattern.match(filename)
@@ -110,6 +176,11 @@ def main():
                 data[year][month_name] = []
                 
             data[year][month_name].append((filename, headline, full_date))
+            all_issues.append((filename, headline, full_date, filepath))
+
+    # Generate RSS (sorted descending by date)
+    all_issues_sorted = sorted(all_issues, key=lambda x: x[2], reverse=True)
+    generate_rss_feed(all_issues_sorted, os.path.join(docs_dir, "rss.xml"))
 
     # Sort logic: newest first
     nav = []
@@ -120,7 +191,6 @@ def main():
         year_nav = []
         months_in_year = data[year]
         
-        # Append to markdown issue list
         markdown_list_lines.append(f"\n## {year}\n")
         
         # Sort months descending
@@ -134,17 +204,13 @@ def main():
             month_nav = []
             markdown_list_lines.append(f"**{month}**\n")
             
-            # Sort issues inside month by full_date descending
             issues = sorted(months_in_year[month], key=lambda x: x[2], reverse=True)
             for filename, headline, full_date in issues:
-                # Add to zensical nav
                 display_title = f"{full_date}期"
                 month_nav.append({display_title: filename})
-                
-                # Add to README index list matching exact format: - 20260522期：[Gemini 3.5 Flash发布](docs/AIToBoxWeeklyNews_20260522.md)
                 markdown_list_lines.append(f"- {full_date}期：[{headline}](docs/{filename})")
             
-            markdown_list_lines.append("") # blank line after month
+            markdown_list_lines.append("")
             year_nav.append({month: month_nav})
             
         nav.append({year: year_nav})
@@ -173,12 +239,15 @@ def main():
         with open(readme_path, "r", encoding="utf-8") as f:
             readme_content = f.read()
         
-        # Split at the sync link or header ending
         split_marker = "[AIToBox NewsWeekly](https://newsweekly.aitobox.com)"
         parts = readme_content.split(split_marker)
         if len(parts) >= 2:
             header_part = parts[0] + split_marker + "\n\n"
-            # Append generated list
+            
+            # Let's add RSS Link under header
+            rss_link_line = "[订阅 RSS](https://newsweekly.aitobox.com/rss.xml) ｜ "
+            header_part = header_part.replace("[AIToBox NewsWeekly](https://newsweekly.aitobox.com)", f"[AIToBox NewsWeekly](https://newsweekly.aitobox.com)\n\n{rss_link_line[:-3]}")
+            
             new_readme_content = header_part + "\n".join(markdown_list_lines).strip() + "\n"
             with open(readme_path, "w", encoding="utf-8") as f:
                 f.write(new_readme_content)
@@ -191,8 +260,9 @@ def main():
     if os.path.exists(readme_path):
         with open(readme_path, "r", encoding="utf-8") as f:
             readme_content = f.read()
-        # Change links pointing to docs/AIToBoxWeeklyNews_*.md to AIToBoxWeeklyNews_*.md since index.md is in docs/
         adjusted_content = readme_content.replace("docs/AIToBoxWeeklyNews_", "AIToBoxWeeklyNews_")
+        # Replace the local relative path for RSS in index.md
+        adjusted_content = adjusted_content.replace("https://newsweekly.aitobox.com/rss.xml", "rss.xml")
         with open(index_path, "w", encoding="utf-8") as f:
             f.write(adjusted_content)
         print("Generated docs/index.md from README.md with adjusted paths.")

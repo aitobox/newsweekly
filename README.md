@@ -9,6 +9,8 @@
 
 [AIToBox NewsWeekly](https://newsweekly.aitobox.com)
 
+[订阅 RSS](https://newsweekly.aitobox.com/rss.xml)
+
 ## 2026
 
 **六月**
