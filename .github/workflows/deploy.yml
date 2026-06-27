@@ -43,6 +43,7 @@ jobs:
       - name: Build Zensical Site
         run: |
           zensical build
+          cp docs/rss.xml site/rss.xml
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
