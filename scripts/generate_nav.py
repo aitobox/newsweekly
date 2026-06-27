@@ -89,7 +89,7 @@ def main():
         f'site_name = "AIToBox WeeklyNews"',
         f'site_description = "记录每周值得分享的AI资讯、好用的工具和服务，周六发布。"',
         f'site_author = "AIToBox"',
-        f'site_url = "https://aitobox.github.io/newsweekly/"',
+        f'site_url = "https://newsweekly.aitobox.com/"',
         f'nav = {to_toml_val(nav)}',
         "",
         "[project.theme]",
@@ -100,6 +100,18 @@ def main():
     with open("zensical.toml", "w", encoding="utf-8") as f:
         f.write("\n".join(toml_lines) + "\n")
     print("zensical.toml generated successfully without external dependencies.")
+
+    # Copy root README.md to docs/index.md, adjusting internal links
+    readme_path = "README.md"
+    index_path = os.path.join(docs_dir, "index.md")
+    if os.path.exists(readme_path):
+        with open(readme_path, "r", encoding="utf-8") as f:
+            readme_content = f.read()
+        # Change links pointing to docs/AIToBoxWeeklyNews_*.md to AIToBoxWeeklyNews_*.md since index.md is in docs/
+        adjusted_content = readme_content.replace("docs/AIToBoxWeeklyNews_", "AIToBoxWeeklyNews_")
+        with open(index_path, "w", encoding="utf-8") as f:
+            f.write(adjusted_content)
+        print("Generated docs/index.md from README.md with adjusted paths.")
 
 if __name__ == "__main__":
     main()
