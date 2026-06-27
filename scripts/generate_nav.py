@@ -8,20 +8,71 @@ MONTH_MAP = {
     "09": "九月", "10": "十月", "11": "十一月", "12": "十二月"
 }
 
-def extract_title(filepath):
+# Historical overrides to match the exact original names in README.md
+HISTORICAL_HEADLINES = {
+    "20240107": "AI繁荣第一年",
+    "20240112": "OpenAI宣布推出ChatGPT Store",
+    "20240119": "比尔·盖茨和萨姆·奥尔特曼对话AI领域",
+    "20240126": "用AI生成的货币发展历史视频",
+    "20240204": "Neuralink 完成了首个人类大脑植入",
+    "20240222": "谷歌发布开源大模型Gemma",
+    "20240309": "如何寻找真实的AI需求",
+    "20240328": "Suno AI--\"音乐界的ChatGPT\"",
+    "20240419": "Meta 发布开源模型 Llama 3",
+    "20240519": "Open AI 发布ChatGPT-4o",
+    "20240614": "Andrej Karpathy 教你从零复现GPT-2，通宵运行即搞定",
+    "20240728": "Meta 发布新一代开源大模型 Llama 3.1",
+    "20240825": "LLM Visualization-将 ChatGPT 原理的详细细节可视化的网站",
+    "20240914": "OpenAI 发布全新的 o1 系列模型",
+    "20241027": "Anthropic 推出了升级版的 Claude 3.5 Sonnet 以及一款新模型 Claude 3.5 Haiku",
+    "20241129": "OpenAI上线AI搜索引擎产品——ChatGPT search",
+    "20241229": "谷歌推出Gemini 2.0",
+    "20250125": "DeepSeek发布并开源 R1 模型",
+    "20250325": "DeepSeek发布DeepSeek-V3-0324，编程能力大幅提升",
+    "20250430": "Llama 4、Gemini 2.5、通义千问Qwen3先后发布，大模型竞争激烈",
+    "20250523": "Google I/O开发者大会",
+    "20260522": "Gemini 3.5 Flash发布",
+}
+
+def extract_headline(filepath, date_key):
+    if date_key in HISTORICAL_HEADLINES:
+        return HISTORICAL_HEADLINES[date_key]
+
     try:
         with open(filepath, "r", encoding="utf-8") as f:
-            for line in f:
-                if line.startswith("# "):
-                    title = line.strip("# \n")
-                    return title
-    except Exception:
-        pass
-    return os.path.basename(filepath)
+            content = f.read()
+        
+        # 1. Try to find Headline section (e.g. "## 🌟 本期头条" or "## 本期头条")
+        match = re.search(r"##\s*.*?头条.*?\n(.*?)(?=\n##\s|$)", content, re.DOTALL)
+        if match:
+            section_content = match.group(1)
+            # Find first H3 link: ### **[Title](Link)** or ### [Title](Link)
+            h3_match = re.search(r"###\s*(?:\*\*)?\[(.*?)(?=\]\()", section_content)
+            if h3_match:
+                return h3_match.group(1).strip()
+            # Find first H3 text
+            h3_text_match = re.search(r"###\s*(?:\*\*)?(.*?)(?:\*\*)?\n", section_content)
+            if h3_text_match:
+                return h3_text_match.group(1).strip()
+                
+        # 2. Fallback to first item under ## AI资讯
+        match_news = re.search(r"##\s*AI资讯.*?\n(.*?)(?=\n##\s|$)", content, re.DOTALL)
+        if match_news:
+            news_content = match_news.group(1)
+            # Find first H4 link or text
+            h4_match = re.search(r"####\s*\d+\.\s*(?:\*\*)?\[(.*?)(?=\]\()", news_content)
+            if h4_match:
+                return h4_match.group(1).strip()
+            h4_text_match = re.search(r"####\s*\d+\.\s*(?:\*\*)?(.*?)(?:\*\*)?\n", news_content)
+            if h4_text_match:
+                return h4_text_match.group(1).strip().strip("* ")
+    except Exception as e:
+        print(f"Error extracting headline from {filepath}: {e}")
+    
+    return "Weekly News"
 
 def to_toml_val(val):
     if isinstance(val, str):
-        # Escape backslashes and double quotes
         escaped = val.replace('\\', '\\\\').replace('"', '\\"')
         return f'"{escaped}"'
     elif isinstance(val, list):
@@ -36,9 +87,9 @@ def to_toml_val(val):
 
 def main():
     docs_dir = "docs"
-    pattern = re.compile(r"^AIToBoxWeeklyNews_(\d{4})(\d{2})\d{2}\.md$")
+    pattern = re.compile(r"^AIToBoxWeeklyNews_(\d{4})(\d{2})(\d{2})\.md$")
     
-    # Grouping structure: { year: { month: [ (filename, display_title) ] } }
+    # Grouping structure: { year: { month: [ (filename, display_title, full_date) ] } }
     data = {}
     
     for filename in os.listdir(docs_dir):
@@ -46,25 +97,31 @@ def main():
         if m:
             year = m.group(1)
             month_num = m.group(2)
+            day_num = m.group(3)
+            full_date = f"{year}{month_num}{day_num}"
             month_name = MONTH_MAP.get(month_num, f"{month_num}月")
             
             filepath = os.path.join(docs_dir, filename)
-            title = extract_title(filepath)
+            headline = extract_headline(filepath, full_date)
             
             if year not in data:
                 data[year] = {}
             if month_name not in data[year]:
                 data[year][month_name] = []
                 
-            data[year][month_name].append((filename, title))
+            data[year][month_name].append((filename, headline, full_date))
 
     # Sort logic: newest first
     nav = []
+    markdown_list_lines = []
     
     # Sort years descending
     for year in sorted(data.keys(), reverse=True):
         year_nav = []
         months_in_year = data[year]
+        
+        # Append to markdown issue list
+        markdown_list_lines.append(f"\n## {year}\n")
         
         # Sort months descending
         sorted_months = sorted(
@@ -75,10 +132,19 @@ def main():
         
         for month in sorted_months:
             month_nav = []
-            # Sort issues inside month by filename descending
-            issues = sorted(months_in_year[month], key=lambda x: x[0], reverse=True)
-            for filename, title in issues:
-                month_nav.append({title: filename})
+            markdown_list_lines.append(f"**{month}**\n")
+            
+            # Sort issues inside month by full_date descending
+            issues = sorted(months_in_year[month], key=lambda x: x[2], reverse=True)
+            for filename, headline, full_date in issues:
+                # Add to zensical nav
+                display_title = f"{full_date}期"
+                month_nav.append({display_title: filename})
+                
+                # Add to README index list matching exact format: - 20260522期：[Gemini 3.5 Flash发布](docs/AIToBoxWeeklyNews_20260522.md)
+                markdown_list_lines.append(f"- {full_date}期：[{headline}](docs/{filename})")
+            
+            markdown_list_lines.append("") # blank line after month
             year_nav.append({month: month_nav})
             
         nav.append({year: year_nav})
@@ -99,10 +165,28 @@ def main():
 
     with open("zensical.toml", "w", encoding="utf-8") as f:
         f.write("\n".join(toml_lines) + "\n")
-    print("zensical.toml generated successfully without external dependencies.")
+    print("zensical.toml generated successfully.")
+
+    # Reconstruct README.md by preserving the header and replacing the list
+    readme_path = "README.md"
+    if os.path.exists(readme_path):
+        with open(readme_path, "r", encoding="utf-8") as f:
+            readme_content = f.read()
+        
+        # Split at the sync link or header ending
+        split_marker = "[AIToBox NewsWeekly](https://newsweekly.aitobox.com)"
+        parts = readme_content.split(split_marker)
+        if len(parts) >= 2:
+            header_part = parts[0] + split_marker + "\n\n"
+            # Append generated list
+            new_readme_content = header_part + "\n".join(markdown_list_lines).strip() + "\n"
+            with open(readme_path, "w", encoding="utf-8") as f:
+                f.write(new_readme_content)
+            print("README.md updated with sorted issue list.")
+        else:
+            print("Warning: Could not find split marker in README.md. Skipping README.md update.")
 
     # Copy root README.md to docs/index.md, adjusting internal links
-    readme_path = "README.md"
     index_path = os.path.join(docs_dir, "index.md")
     if os.path.exists(readme_path):
         with open(readme_path, "r", encoding="utf-8") as f:
