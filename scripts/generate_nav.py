@@ -236,7 +236,8 @@ def main():
     # Sort logic: newest first
     nav = []
     
-    # Prepend RSS Subscription link as a top-level tab in navigation bar
+    # Prepend Welcome page and RSS Subscription link as top-level tabs in navigation bar
+    nav.append({"欢迎": "welcome.md"})
     nav.append({"RSS 订阅": "https://newsweekly.aitobox.com/rss.xml"})
     
     markdown_list_lines = []
