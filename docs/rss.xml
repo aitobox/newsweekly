@@ -5,29 +5,49 @@
     <link>https://newsweekly.aitobox.com/</link>
     <description>记录每周值得分享的AI资讯、好用的工具和服务，周六发布。</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 27 Jun 2026 21:29:31 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 10:20:41 +0800</lastBuildDate>
     <atom:link href="https://newsweekly.aitobox.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[ 20260627期：AI在工作中学习将是下一个重大突破[The next big breakthrough will be AIs learning on the job] ]]></title>
       <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260627/</link>
       <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260627/</guid>
       <pubDate>Sat, 27 Jun 2026 10:00:00 +0800</pubDate>
-      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+      <description><![CDATA[### **[AI在工作中学习将是下一个重大突破[The next big breakthrough will be AIs learning on the job]](https://www.dwarkesh.com/p/the-next-paradigm)** - *dwarkesh.com*
 
-本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+**深度解读**
+当前AI实验室正押注于一种核心范式：通过在数千个强化学习（RL）环境中执行数百万项可验证任务，训练出具备通用问题解决能力的AGI。这一愿景的核心逻辑在于，尽管当前模型在训练阶段的样本效率远低于人类，但通过大规模算力投入（RLVR，即基于强化学习的验证训练），模型能够学会如何在面对错误、歧义和长期任务时持续推进。文章指出，这种方法试图通过“暴力美学”解决数据效率和持续学习的缺陷。一个关键的观点是，传统的“权重更新”式持续学习可能并非必要，因为随着上下文窗口（Context Window）的无限扩展，模型完全可以在单次会话中通过“在职学习”模拟人类数月的经验积累。
 
-**深度解读**]]></description>
+然而，文章也冷静地揭示了该路径面临的“峡谷”：可验证性（Verifiability）并不等同于可磨练性（Grindability）。AI在编程和数学领域进展神速，是因为这些领域拥有高度可复制、可并行化的模拟器；而现实世界（如政治博弈、商业决策）是不可重置、非平稳的，且缺乏海量高质量的模拟数据。如果AI无法在这些“重置自由”的复杂环境中高效学习，那么仅靠在虚拟容器中训练出的通用能力，是否足以应对现实世界的极端复杂性，仍是一个巨大的经验性疑问。此外，如果短视界的强化学习无法泛化到长视界，且学到的经验无法固化到模型权重中，那么这种“在职学习”可能只是昙花一现的临时智慧。这篇深度分析提醒我们，从实验室的“容器训练”跨越到现实世界的“实战博弈”，是通往AGI之路最艰难的最后一公里。
+
+**核心摘录 (Core Highlights)**
+> **EN**: The people optimistic about this vision would say that anything we might consider a fundamental deficits with the current learning paradigm—for example, data inefficiency and lack of continual learning—can be steamrolled by just scaling training more, just as all the supposed “fundamental” research problems in natural language processing collapsed against the flood of compute thrown into LLMs.
+> **ZH**: 对这一愿景持乐观态度的人会认为，我们目前认为的任何学习范式的根本缺陷——例如数据效率低下和缺乏持续学习能力——都可以通过进一步扩大训练规模来碾压，就像自然语言处理中所有所谓的“根本性”研究难题，最终都在投入LLM的算力洪流中土崩瓦解一样。
+
+> **EN**: It is not enough for a domain to be verifiable. It also has to be very grindable—in the sense that you can run lots of parallel rollouts against a deterministic and replayable simulator.
+> **ZH**: 一个领域仅仅具备可验证性是不够的。它还必须具备极高的“可磨练性”——即你能够针对一个确定性且可重放的模拟器，运行大量的并行推演。]]></description>
     </item>
     <item>
       <title><![CDATA[ 20260621期：Exclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion ]]></title>
       <link>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260621/</link>
       <guid>https://newsweekly.aitobox.com/AIToBoxWeeklyNews_20260621/</guid>
       <pubDate>Sun, 21 Jun 2026 10:00:00 +0800</pubDate>
-      <description><![CDATA[这里记录每周值得分享的AI科技内容，周末发布。
+      <description><![CDATA[### **[Exclusive: OpenAI Losses Increased Nearly 8X in 2025, With Spending Hitting $34 Billion](https://www.wheresyoured.at/exclusive-openai-financials/)** - *wheresyoured.at*
 
-本杂志开源（GitHub: [aitobox/newsweekly](https://github.com/aitobox/newsweekly)），欢迎提交 issue，投稿或推荐你的项目。
+**深度解读**
 
-**深度解读**]]></description>
+本期头条披露的OpenAI 2025年财务数据，无异于在狂热的AI资本市场投下了一枚深水炸弹。数据显示，OpenAI的年度亏损额从2024年的50.9亿美元激增至2025年的385.3亿美元，亏损规模扩大近8倍。这一数字不仅远超市场预期，更将AI行业的“烧钱”竞赛推向了前所未有的高度。从财务结构看，OpenAI的研发支出高达191.8亿美元，而支付给微软的各类费用总计达172亿美元，这揭示了一个残酷的现实：OpenAI目前本质上是微软云基础设施的“超级租户”，其收入增长虽然显著，但远不足以覆盖庞大的算力折旧与模型训练成本。
+
+此次亏损的激增，部分源于公司从非营利组织向营利性实体的转型，导致了巨额的股权与可转换权益调整。然而，剔除这些会计层面的账面波动，其核心运营亏损依然高达209.2亿美元。这一数据引发了行业对AI商业模式可持续性的深度质疑：当算力成本与研发投入呈指数级增长，而营收增速却难以同步匹配时，OpenAI是否正陷入一场“规模不经济”的陷阱？
+
+对于整个科技行业而言，这份财报标志着AI泡沫化风险的加剧。OpenAI作为行业领头羊，其财务状况是整个大模型生态的晴雨表。如果连拥有顶级融资能力的OpenAI都面临如此惊人的现金消耗，那么其他处于追赶地位的AI初创公司将面临更严峻的融资寒冬。未来，投资者将不再仅仅关注模型参数的迭代，而是会更苛刻地审视AI企业的单位经济效益（Unit Economics）。这场由算力驱动的“军备竞赛”，正在从技术比拼转向资本耐力测试，而OpenAI能否在现金流耗尽前实现盈利，将决定这一轮AI浪潮的最终走向。
+
+**核心摘录 (Core Highlights)**
+
+> **EN**: OpenAI’s financial statements tell the story of a company with incredible losses. Revenue: $3.7 billion Cost of Revenue: $2.65 billion Research and Development: $7.81 billion Sales and Marketing: $1.11 billion General and Administrative: $907 Million Total Costs and Expenses: $12.48 billion Loss from Operations: $8.78 billion.
+> **ZH**: OpenAI的财务报表讲述了一家亏损惊人的公司。营收为37亿美元，营收成本为26.5亿美元，研发费用为78.1亿美元，销售与营销费用为11.1亿美元，一般及行政费用为9.07亿美元。总成本与费用为124.8亿美元，运营亏损为87.8亿美元。
+
+> **EN**: The financial condition of OpenAI is deeply concerning. $38.53 billion in losses are astronomical, and far higher than most believed it would be. Losses also appear to be mounting year-over-year at a dramatic rate, and I’m not sure how this company finds a way toward any kind of sustainability or profitability.
+> **ZH**: OpenAI的财务状况令人深感担忧。385.3亿美元的亏损额是天文数字，远高于大多数人的预期。亏损似乎正以惊人的速度逐年攀升，我不确定这家公司如何才能找到通往可持续发展或盈利的路径。]]></description>
     </item>
     <item>
       <title><![CDATA[ 20260614期：Dangerous Technology For Americans Only ]]></title>

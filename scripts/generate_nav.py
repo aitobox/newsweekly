@@ -76,8 +76,17 @@ def extract_headline(filepath, date_key):
 def extract_description(filepath):
     try:
         with open(filepath, "r", encoding="utf-8") as f:
-            lines = f.readlines()
+            content = f.read()
         
+        # 1. Try to extract the Headline section content first
+        match = re.search(r"##\s*.*?头条.*?\n(.*?)(?=\n##\s|$)", content, re.DOTALL)
+        if match:
+            headline_content = match.group(1).strip()
+            if headline_content:
+                return headline_content
+        
+        # 2. Fallback: extract first 3 paragraphs
+        lines = content.split("\n")
         paragraphs = []
         for line in lines:
             line_str = line.strip()
