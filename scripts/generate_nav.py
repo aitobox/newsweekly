@@ -36,6 +36,8 @@ HISTORICAL_HEADLINES = {
     "20260522": "Gemini 3.5 Flash发布",
 }
 
+EMAIL_SUB_URL = "https://9a47892f.sibforms.com/serve/MUIFAGsYhumfplrRcRceCaRqKCF5sPil0LtuX8WOoED-6ioinVElVvmkKbukme0gxC8GPmVGJmOhZmSjGa-5Mxx2W84_h1feovZDwXFeqAknTPbJnD-8Jx3q24oq_TPtAY7ZUqmPzdA6KBvknSn2lj4cSM9us7Wsi-vezBJwNZyxp_O3_RxWhGuMWV4QeuRGH7wUYveN7WoVz53ItQ=="
+
 def extract_headline(filepath, date_key):
     if date_key in HISTORICAL_HEADLINES:
         return HISTORICAL_HEADLINES[date_key]
@@ -236,8 +238,9 @@ def main():
     # Sort logic: newest first
     nav = []
     
-    # Prepend Welcome page and RSS Subscription link as top-level tabs in navigation bar
+    # Prepend Welcome page, Email Subscription, and RSS Subscription to top navigation bar
     nav.append({"欢迎": "welcome.md"})
+    nav.append({"邮件订阅": EMAIL_SUB_URL})
     nav.append({"RSS 订阅": "https://newsweekly.aitobox.com/rss.xml"})
     
     markdown_list_lines = []
@@ -295,9 +298,10 @@ def main():
         with open(readme_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
         
-        # Update lines 2 and 3 of README to put RSS link in the subtitle header
+        # Update header of README to display Email and RSS subscriptions side-by-side
         if len(lines) >= 3:
-            lines[1] = "每周AI资讯、工具推荐 | [RSS 订阅](https://newsweekly.aitobox.com/rss.xml)\n"
+            lines[1] = "每周AI资讯、工具推荐\n"
+            lines[2] = f"\n📢 **订阅周刊**：[📧 邮件订阅]({EMAIL_SUB_URL}) ｜ [🧡 RSS 订阅](https://newsweekly.aitobox.com/rss.xml)\n\n"
             
         readme_content = "".join(lines)
         

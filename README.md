@@ -1,5 +1,7 @@
 # AIToBox周刊
-每周AI资讯、工具推荐 | [RSS 订阅](https://newsweekly.aitobox.com/rss.xml)
+每周AI资讯、工具推荐
+
+📢 **订阅周刊**：[📧 邮件订阅](https://9a47892f.sibforms.com/serve/MUIFAGsYhumfplrRcRceCaRqKCF5sPil0LtuX8WOoED-6ioinVElVvmkKbukme0gxC8GPmVGJmOhZmSjGa-5Mxx2W84_h1feovZDwXFeqAknTPbJnD-8Jx3q24oq_TPtAY7ZUqmPzdA6KBvknSn2lj4cSM9us7Wsi-vezBJwNZyxp_O3_RxWhGuMWV4QeuRGH7wUYveN7WoVz53ItQ==) ｜ [🧡 RSS 订阅](https://newsweekly.aitobox.com/rss.xml)
 
 记录每周值得分享的AI资讯、好用的工具和服务，周六发布。
 
