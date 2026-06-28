@@ -99,6 +99,47 @@ def extract_description(filepath):
     except Exception:
         return "AIToBox WeeklyNews"
 
+def markdown_to_html(md_text):
+    lines = md_text.split("\n")
+    in_quote = False
+    html_lines = []
+    
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith(">"):
+            quote_text = stripped[1:].strip()
+            if quote_text.startswith("**EN**:") or quote_text.startswith("**ZH**:"):
+                quote_text = quote_text.replace("**EN**:", "<strong>EN</strong>:")
+                quote_text = quote_text.replace("**ZH**:", "<strong>ZH</strong>:")
+            
+            if not in_quote:
+                html_lines.append("<blockquote>")
+                in_quote = True
+            html_lines.append(f"  <p>{quote_text}</p>")
+        else:
+            if in_quote:
+                html_lines.append("</blockquote>")
+                in_quote = False
+            
+            if stripped.startswith("###"):
+                html_lines.append(f"<h3>{stripped[3:].strip()}</h3>")
+            elif stripped.startswith("##"):
+                html_lines.append(f"<h2>{stripped[2:].strip()}</h2>")
+            elif stripped.startswith("####"):
+                html_lines.append(f"<h4>{stripped[4:].strip()}</h4>")
+            elif stripped:
+                html_lines.append(f"<p>{stripped}</p>")
+            else:
+                html_lines.append("")
+
+    if in_quote:
+        html_lines.append("</blockquote>")
+
+    html_content = "\n".join(html_lines)
+    html_content = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", html_content)
+    html_content = re.sub(r"\[(.*?)(?=\]\()\]\((.*?)\)", r'<a href="\2">\1</a>', html_content)
+    return html_content
+
 def get_rfc822_date(date_str):
     try:
         dt = datetime.datetime.strptime(date_str, "%Y%m%d")
@@ -127,7 +168,8 @@ def generate_rss_feed(issues_list, output_path):
     
     for filename, headline, full_date, filepath in issues_list:
         pub_date = get_rfc822_date(full_date)
-        desc = extract_description(filepath)
+        md_desc = extract_description(filepath)
+        html_desc = markdown_to_html(md_desc)
         page_url = f"https://newsweekly.aitobox.com/{filename[:-3]}/"
         
         item_xml = f"""    <item>
@@ -135,7 +177,7 @@ def generate_rss_feed(issues_list, output_path):
       <link>{page_url}</link>
       <guid>{page_url}</guid>
       <pubDate>{pub_date}</pubDate>
-      <description><![CDATA[{desc}]]></description>
+      <description><![CDATA[{html_desc}]]></description>
     </item>"""
         rss_items.append(item_xml)
         
