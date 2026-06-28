@@ -104,7 +104,7 @@ def extract_description(filepath):
         print(f"Error extracting description from {filepath}: {e}")
         return "AIToBox WeeklyNews"
 
-def markdown_to_html(md_text):
+def markdown_to_html(md_text, page_url=None):
     lines = md_text.split("\n")
     in_quote = False
     html_lines = []
@@ -129,12 +129,18 @@ def markdown_to_html(md_text):
                 html_lines.append("  </blockquote>")
                 in_quote = False
             
-            if stripped.startswith("###"):
+            # Evaluate longer prefix first to avoid "###" matching "####"
+            if stripped.startswith("####"):
+                heading_text = stripped[4:].strip()
+                if page_url:
+                    # Link secondary headings directly to the post page
+                    html_lines.append(f"  <h4 style=\"margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; line-height: 1.4;\"><a href=\"{page_url}\" style=\"color: #3182ce; text-decoration: none;\">{heading_text}</a></h4>")
+                else:
+                    html_lines.append(f"  <h4 style=\"margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; line-height: 1.4;\">{heading_text}</h4>")
+            elif stripped.startswith("###"):
                 html_lines.append(f"  <h3 style=\"margin-top: 24px; margin-bottom: 12px; font-size: 1.3em; line-height: 1.4;\">{stripped[3:].strip()}</h3>")
             elif stripped.startswith("##"):
                 html_lines.append(f"  <h2 style=\"margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px; font-size: 1.6em; line-height: 1.3;\">{stripped[2:].strip()}</h2>")
-            elif stripped.startswith("####"):
-                html_lines.append(f"  <h4 style=\"margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; line-height: 1.4;\">{stripped[4:].strip()}</h4>")
             elif stripped:
                 html_lines.append(f"  <p style=\"margin-bottom: 16px; line-height: 1.85;\">{stripped}</p>")
             else:
@@ -179,8 +185,8 @@ def generate_rss_feed(issues_list, output_path):
     for filename, headline, full_date, filepath in issues_list:
         pub_date = get_rfc822_date(full_date)
         md_desc = extract_description(filepath)
-        html_desc = markdown_to_html(md_desc)
         page_url = f"https://newsweekly.aitobox.com/{filename[:-3]}/"
+        html_desc = markdown_to_html(md_desc, page_url)
         
         item_xml = f"""    <item>
       <title><![CDATA[ {full_date}期：{headline} ]]></title>
@@ -215,7 +221,7 @@ def main():
     docs_dir = "docs"
     pattern = re.compile(r"^AIToBoxWeeklyNews_(\d{4})(\d{2})(\d{2})\.md$")
     
-    # Grouping structure: { year: { month: [ (filename, display_title, full_date) ] } }
+    # Grouping structure: {year: {month: [(filename, headline, full_date)]}}
     data = {}
     all_issues = []
     
