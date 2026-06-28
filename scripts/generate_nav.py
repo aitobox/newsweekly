@@ -80,31 +80,37 @@ def extract_description(filepath):
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
         
-        # 1. Try to extract the Headline section content first
-        match = re.search(r"##\s*.*?头条.*?\n(.*?)(?=\n##\s|$)", content, re.DOTALL)
-        if match:
-            headline_content = match.group(1).strip()
-            if headline_content:
-                return headline_content
-        
-        # 2. Fallback: extract first 3 paragraphs
         lines = content.split("\n")
-        paragraphs = []
+        output_parts = []
+        in_headline = False
+        
         for line in lines:
             line_str = line.strip()
-            if not line_str or line_str.startswith("#") or line_str.startswith(">"):
-                continue
-            paragraphs.append(line_str)
-            if len(paragraphs) >= 3:
-                break
-        return "\n\n".join(paragraphs)
-    except Exception:
+            if line_str.startswith("## "):
+                in_headline = False
+                if "头条" in line_str:
+                    in_headline = True
+                    output_parts.append(line_str)
+                else:
+                    output_parts.append(line_str)
+            elif in_headline:
+                output_parts.append(line)
+            else:
+                if line_str.startswith("### ") or line_str.startswith("#### "):
+                    output_parts.append(line_str)
+                    
+        return "\n".join(output_parts)
+    except Exception as e:
+        print(f"Error extracting description from {filepath}: {e}")
         return "AIToBox WeeklyNews"
 
 def markdown_to_html(md_text):
     lines = md_text.split("\n")
     in_quote = False
     html_lines = []
+    
+    # Wrap in a styled div with a spacious line-height (1.85) and standard font family
+    html_lines.append("<div style=\"line-height: 1.85; font-size: 16px; color: #2d3748; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;\">")
     
     for line in lines:
         stripped = line.strip()
@@ -115,31 +121,33 @@ def markdown_to_html(md_text):
                 quote_text = quote_text.replace("**ZH**:", "<strong>ZH</strong>:")
             
             if not in_quote:
-                html_lines.append("<blockquote>")
+                html_lines.append("  <blockquote style=\"border-left: 4px solid #e2e8f0; padding-left: 16px; margin: 16px 0; color: #718096; font-style: italic;\">")
                 in_quote = True
-            html_lines.append(f"  <p>{quote_text}</p>")
+            html_lines.append(f"    <p style=\"margin-bottom: 8px; line-height: 1.85;\">{quote_text}</p>")
         else:
             if in_quote:
-                html_lines.append("</blockquote>")
+                html_lines.append("  </blockquote>")
                 in_quote = False
             
             if stripped.startswith("###"):
-                html_lines.append(f"<h3>{stripped[3:].strip()}</h3>")
+                html_lines.append(f"  <h3 style=\"margin-top: 24px; margin-bottom: 12px; font-size: 1.3em; line-height: 1.4;\">{stripped[3:].strip()}</h3>")
             elif stripped.startswith("##"):
-                html_lines.append(f"<h2>{stripped[2:].strip()}</h2>")
+                html_lines.append(f"  <h2 style=\"margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px; font-size: 1.6em; line-height: 1.3;\">{stripped[2:].strip()}</h2>")
             elif stripped.startswith("####"):
-                html_lines.append(f"<h4>{stripped[4:].strip()}</h4>")
+                html_lines.append(f"  <h4 style=\"margin-top: 20px; margin-bottom: 10px; font-size: 1.1em; line-height: 1.4;\">{stripped[4:].strip()}</h4>")
             elif stripped:
-                html_lines.append(f"<p>{stripped}</p>")
+                html_lines.append(f"  <p style=\"margin-bottom: 16px; line-height: 1.85;\">{stripped}</p>")
             else:
                 html_lines.append("")
 
     if in_quote:
-        html_lines.append("</blockquote>")
+        html_lines.append("  </blockquote>")
+        
+    html_lines.append("</div>")
 
     html_content = "\n".join(html_lines)
     html_content = re.sub(r"\*\*(.*?)\*\*", r"<strong>\1</strong>", html_content)
-    html_content = re.sub(r"\[(.*?)(?=\]\()\]\((.*?)\)", r'<a href="\2">\1</a>', html_content)
+    html_content = re.sub(r"\[(.*?)(?=\]\()\]\((.*?)\)", r'<a href="\2" style="color: #3182ce; text-decoration: none;">\1</a>', html_content)
     return html_content
 
 def get_rfc822_date(date_str):
@@ -298,7 +306,7 @@ def main():
         with open(readme_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
         
-        # Update header of README to display Email and RSS subscriptions side-by-side
+        # Update lines 2 and 3 of README to put RSS link in the subtitle header
         if len(lines) >= 3:
             lines[1] = "每周AI资讯、工具推荐\n"
             lines[2] = f"\n📢 **订阅周刊**：[📧 邮件订阅]({EMAIL_SUB_URL}) ｜ [🧡 RSS 订阅](https://newsweekly.aitobox.com/rss.xml)\n\n"
