@@ -459,8 +459,6 @@ https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything
 
 #### 25. Windows 98 shipped June 25, 1998
 
-> （摘要生成失败，请查看原文）
-
 **资讯地址**
 
 https://dfarq.homeip.net/windows-98-shipped-june-25-1998/
